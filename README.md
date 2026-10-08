@@ -1,3 +1,5 @@
+This repository contains the code used to perform the analyses presented in the paper submitted to Geoscientific Model Development (GMD): 
+
 **Contrasted climatologies in Pamir and Central Himalaya highlighted
 from MAR high-resolution atmospheric reanalysis over 1950-2025**
 
@@ -9,8 +11,6 @@ Mondher Chekki<sup>1</sup>, Patrick Wagnon<sup>1</sup>, Dibas Shrestha<sup>3</su
 <sup>3</sup>Central Department of Hydrology and Meteorology, Tribhuvan University, Kirtipur, Nepal
 
 Correspondence to: María Santolaria-Otín (maria.santolaria-otin@univ-grenoble-alpes.fr)
-
-This repository contains the code used to perform the analyses presented in the paper submitted to Geoscientific Model Development (GMD)
 
 **Abstract**
 High Mountain Asia (HMA) hosts the largest mass of terrestrial ice outside the polar regions, where combined
