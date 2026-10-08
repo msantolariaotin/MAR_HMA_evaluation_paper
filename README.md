@@ -38,3 +38,23 @@ the Pamir and Central Himalaya and a validated modelling framework for investiga
 evolution, and natural hazards, as well as high-resolution atmospheric forcing for impact models such as glacier mass balance,
 snowpack, and hydrological models. The validated model configuration also provides a robust and 35 transferable framework for
 extending the simulations to the entire High Mountain Asia domain.
+
+
+**Data**
+ERA5 and ERA5-Land reanalyses are available from the Copernicus Climate Data Store (https://cds.climate.copernicus.eu/). HAR
+v2 can be obtained from the High Asia Refined Analysis project website
+(https://www.tu.berlin/klima/forschung/regionalklimatologie/hochasien/har). CRU TS4.05 is distributed by the Climatic
+Research Unit (University of East Anglia; https://crudata.uea.ac.uk/cru/data/hrg/). CHIRPS precipitation data are available
+from the Climate Hazards Center (https://www.chc.ucsb.edu/data/chirps), APHRODITE precipitation data from the
+APHRODITE project (http://aphrodite.st.hirosaki-u.ac.jp/download/), and GPCP monthly precipitation data from the NOAA
+Physical Sciences Laboratory (https://psl.noaa.gov/data/gridded/data.gpcp.html). The High Mountain Asia Snow Reanalysis
+(HMA-SR, Version 1) is available from the NASA National Snow and Ice Data Center (NSIDC;
+https://nsidc.org/data/hma_sr_d/versions/1), and the ESA Snow CCI SCFG v2.0 product is available through the ESA Climate
+Change Initiative data portal (https://climate.esa.int/en/projects/snow/). The GMTED2010 digital elevation model is available
+from the TEMIS data portal (https://www.temis.nl/data/gmted2010/index.php).
+The in situ observations over the Khumbu region are publicly available from the GLACIOCLIM programme
+(https://glacioclim.osug.fr), the National Geographic Perpetual Planet Everest expedition
+(https://www.nationalgeographic.org/projects/perpetual-planet/everest/weather-data/; Matthews et al., 2020), and the Ev-K2-
+CNR project (https://doi.org/10.5281/zenodo.15211352; Salerno et al., 2025).
+
+

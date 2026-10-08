@@ -39,36 +39,6 @@ def shifting_grid(ds):
     ds = ds.rename({'_longitude_adjusted': lon_name})
     return ds
 
-def shifting_grid_ALLOW(ds):
-    lat_name,lon_name=latlon(ds)
-    # Adjust lon values to make sure they are within (-180, 180)
-    ds['_longitude_adjusted'] = xr.where(
-        ds[lon_name] > 90,
-        ds[lon_name] - (360),
-        ds[lon_name])
-    # reassign the new coords to as the main lon coords
-    # and sort DataArray using new coordinate values
-    ds = (ds.swap_dims({lon_name: '_longitude_adjusted'})
-    .sel(**{'_longitude_adjusted': sorted(ds._longitude_adjusted)})
-    .drop(lon_name))
-    ds = ds.rename({'_longitude_adjusted': lon_name})
-    return ds
-
-def shifting_grid_ALLOWback(ds):
-    lat_name,lon_name=latlon(ds)
-    # Adjust lon values to make sure they are within (-180, 180)
-    ds['_longitude_adjusted'] = xr.where(
-        ds[lon_name] < -180,
-        ds[lon_name] + (360),
-        ds[lon_name])
-    # reassign the new coords to as the main lon coords
-    # and sort DataArray using new coordinate values
-    ds = (ds.swap_dims({lon_name: '_longitude_adjusted'})
-    .sel(**{'_longitude_adjusted': sorted(ds._longitude_adjusted)})
-    .drop(lon_name))
-    ds = ds.rename({'_longitude_adjusted': lon_name})
-    return ds
-
 def reversing_lat(ds):
     lat_str = ''
     lon_str = ''
@@ -81,9 +51,7 @@ def reversing_lat(ds):
         else:
             other_dims_str.append(dim)
     return dsO
-##ALLOW lon[130E,110W];lat[20,90]
-#latS,latN,lonW,lonE=20,90,-230,-110
-#field = ds90.where((latS < ds90.coords[lat]) & ( ds90.coords[lat] < latN) & (lonW < ds90.coords[lon]) & ( ds90.coords[lon] < lonE),drop=True)
+
 # =============================================================================
 # Zones
 # =============================================================================
@@ -313,26 +281,6 @@ def field_dom(ds,domain):
     #print('Domain;latS,latN,lonW,lonE:',domain,latS,latN,lonW,lonE)
     return field
 
-def field_dom_noaaCDR(ds,domain):
-    latS,latN,lonW,lonE,latlim,lonlim=coord_domain(domain)
-    field=ds.sel(lat=slice(latS,latN),lon=slice(lonW,lonE))
-    return field
-
-def field_sel_dom(ds,domain):
-        # Get the longitude and latitude names + other dimensions to test that the
-    latS,latN,lonW,lonE,latlim,lonlim=coord_domain(domain)
-    lat_str = ''
-    lon_str = ''
-    other_dims_str = []
-    for dim in ds.dims:
-        if dim in ['lat', 'lon']:
-            field=ds.sel(lat=latlim,lon=lonlim)
-        elif dim in ['latitude', 'longitude']:
-            field=ds.sel(latitude=latlim,longitude=lonlim)
-        else:
-            other_dims_str.append(dim)
-    print(domain,latS,latN,lonW,lonE,latlim,lonlim)
-    return field
 
 def xy_sel_dom(ds,domain):
     latS,latN,lonW,lonE,latlim,lonlim=dom.coord_domain(domain)
@@ -354,20 +302,4 @@ def xy_sel_dom(ds,domain):
     field_dom=ds.where(mask,drop=True)
     return field_dom
 
-def field_sel_dom_lat_inverse(ds,domain):
-    latS,latN,lonW,lonE,latlim,lonlim=coord_domain(domain)
-    lat_str = ''
-    lon_str = ''
-    other_dims_str = []
-    for dim in ds.dims:
-        if dim in ['lat', 'latitude']:
-            lat_str = dim
-        elif dim in ['lon', 'longitude']:
-            lon_str = dim
-        else:
-            other_dims_str.append(dim)
-    latS,latN,lonW,lonE,latlim,lonlim=coord_domain(domain)
-    #print('Domain;Domain;  latS,latN,lonW,lonE:',domain,latS,latN,lonW,lonE)
-    field=ds.sel(lat_str=slice(latN,latS),lon_str=slice(lonW,lonE))
-    return field
 
