@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+  - family-names: Santolaria-Otin  
+    given-names: Maria
+    orcid: https://orcid.org/0000-0002-9232-524
+title: "Analysis of MAR simulations over Pamir and Central Himalaya (1950-2025)
+version: 2.0.4
+identifiers:
+  - type: doi
+    value:  to complete with zenodo doi 
+date-released: 2021-08-11
