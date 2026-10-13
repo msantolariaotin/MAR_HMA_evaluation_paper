@@ -1,12 +1,16 @@
 cff-version: 1.2.0
+title: "MAR HMA evaluation paper"
+version: 1.8.0
+license: "MIT"
+type: software
+abstract: "These are the scripts used to evaluate MAR model"
 message: "If you use this software, please cite it as below."
 authors:
-- family-names: "Santolaria-Otin"
-  given-names: "Maria"
-  orcid: "https://orcid.org/0000-0002-9232-524"
-title: "MAR HMA evaluation paper"
-version: 2.0.4
-doi: "https://doi.org/10.5281/zenodo.23341967"
-doi: "https://doi.org/10.5281/zenodo.23263392"
-date-released: 2017-12-18
-url: "https://github.com/msantolariaotin/MAR_HMA_evaluation_paper/"
+  - given-names: Maria
+    family-names: Santolaria-Otin
+    affiliation: Institut des Geosciences de l'Environnement
+    orcid: "https://orcid.org/0000-0002-9232-524"
+keywords:
+  - regional atmospheric model
+  - high mountain asia
+  - climate and cryosphere
