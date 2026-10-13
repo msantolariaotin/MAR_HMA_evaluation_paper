@@ -4,8 +4,8 @@ message: "If you use this software, please cite it as follows."
 title: "MAR HMA evaluation paper"
 type: software
 authors:
-  - family-names: "Santolaria-Otín"
-    given-names: "María"
+  - family-names: "Santolaria-Otin"
+    given-names: "Maria"
     orcid: "https://orcid.org/0000-0002-9232-5245"
 version: "1.0.0"
 date-released: "2026-10-13"
