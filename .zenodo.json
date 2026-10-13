@@ -1,0 +1,29 @@
+
+{
+  "title": "MAR HMA evaluation paper",
+  "upload_type": "software",
+  "description": "Code and scripts for the MAR High Mountain Asia evaluation paper.",
+  "creators": [
+    {
+      "name": "Santolaria-Otín, María",
+      "orcid": "0000-0002-9232-5245"
+    }
+  ],
+  "license": "MIT",
+  "version": "1.0.1",
+  "publication_date": "2026-10-13",
+  "access_right": "open",
+  "keywords": [
+    "MAR",
+    "High Mountain Asia",
+    "climate modelling"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/msantolariaotin/MAR_HMA_evaluation_paper",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ]
+}
+
