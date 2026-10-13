@@ -4,9 +4,8 @@ authors:
   - family-names: Santolaria-Otin  
     given-names: Maria
     orcid: https://orcid.org/0000-0002-9232-524
-title: "Analysis of MAR simulations over Pamir and Central Himalaya (1950-2025)
+title: "Contrasted climatologies in Pamir and Central Himalaya highlighted from MAR high-resolution atmospheric reanalysis over 1950-2025"
 version: 2.0.4
 identifiers:
-  - type: doi
-    value:  to complete with zenodo doi 
+  - data: 10.5281/zenodo.23341967 ; 10.5281/zenodo.23341967
 date-released: 2021-08-11
