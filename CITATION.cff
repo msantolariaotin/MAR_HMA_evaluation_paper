@@ -3,7 +3,7 @@ message: "If you use this software, please cite it as below."
 authors:
 - family-names: Joe
   given-names: Johnson
-orcid: https://orcid.org/0000-0000-0000-0000
+orcid: "https://orcid.org/0000-0002-9232-524"
 title:
 version: MAR-HMA
 date-released: 2026-10-13
