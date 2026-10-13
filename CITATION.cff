@@ -1,10 +1,12 @@
 cff-version: 1.2.0
-message: "If you use this software, please cite it."
-title: "MAR HMA evaluation paper"
-type: software
+message: "If you use this software, please cite it as below."
 authors:
-  - family-names: "Santolaria-Otín"
-    given-names: "María"
-     orcid: https://orcid.org/0000-0002-9232-524
-version: 1.0.0
-license: MIT
+- family-names: "Santolaria-Otin"
+  given-names: "Maria"
+  orcid: "https://orcid.org/0000-0002-9232-524"
+title: "MAR HMA evaluation paper"
+version: 2.0.4
+doi: "https://doi.org/10.5281/zenodo.23341967"
+doi: "https://doi.org/10.5281/zenodo.23263392"
+date-released: 2017-12-18
+url: "https://github.com/msantolariaotin/MAR_HMA_evaluation_paper/"
