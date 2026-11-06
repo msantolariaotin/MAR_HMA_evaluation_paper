@@ -1,4 +1,4 @@
-This repository contains the code ( DOI: 10.5281/zenodo.23344344)  used to perform the analyses presented in the study:
+This repository contains the code used to perform the analyses presented in the study:
 
 **Contrasted climatologies in Pamir and Central Himalaya highlighted
 from MAR high-resolution atmospheric reanalysis over 1950-2025**
@@ -41,6 +41,7 @@ extending the simulations to the entire High Mountain Asia domain.
 
 
 **MAR model**
+
 The MAR model code and additional documentation are available at:
 https://gitlab.uliege.be/especes/mar/stable/
 
@@ -60,7 +61,7 @@ The observational and reanalysis datasets used in this study are publicly availa
 
 -HAR v2 can be obtained from the High Asia Refined Analysis project website (https://www.tu.berlin/klima/forschung/regionalklimatologie/hochasien/har/; https://data.klima.tu-berlin.de/HAR/v2/ ). 
 
--CRU TS4.05 is distributed by the Climatic Research Unit (University of East Anglia; https://crudata.uea.ac.uk/cru/data/hrg/; https://catalogue.ceda.ac.uk/uuid/c26a65020a5e4b80b20018f148556681/ ). 
+-CRU TS4.05 is distributed by the Climatic Research Unit (University of East Anglia;https://crudata.uea.ac.uk/cru/data/hrg/; https://catalogue.ceda.ac.uk/uuid/c26a65020a5e4b80b20018f148556681/ ). 
 
 -CHIRPS precipitation data are available from the Climate Hazards Center (https://www.chc.ucsb.edu/data/chirps/).
 
